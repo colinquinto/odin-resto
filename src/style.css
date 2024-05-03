@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #78716c;
+    --second-color: #e5e5e5;
+    font-family: 'main-font';
+}
+
+@font-face {
+    font-family: 'main-font';
+    src: url('./font-one.ttf') format('truetype');
+    font-style: normal;
+  }
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--main-color);
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    text-align: center;
+}
+
+nav > button {
+    width: 100px;
+    border: none;
+    height: 35px;
+    background: none;
+    color: #fff;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-family: 'main-font';
+    margin: 0 10px 20px 10px;
+    justify-self: center;
+}
+
+nav > button:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+    border: 3px solid;
+}
+
+#content {
+    min-height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 30px;
+}
+
+.first > h1 {
+    text-align: center;
+    color: var(--main-color);
+    align-self: center;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.first > h1 > p {
+    font-size:  clamp(1rem, 2vw, 1.5rem);
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.second {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    width: 100%;
+    color: var(--main-color);
+    justify-content: space-evenly;
+}
+
+.second-p1, .second-p2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px;
+    font-size: clamp(0.7rem, 1vw, 3rem);
+    border: 5px solid;
+}
+
+.food, .contact-img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.second > div > button {
+    font-family: 'main-font';
+    background: none;
+    border: none;
+    text-decoration: underline;
+    margin: 10px 0;
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    color: var(--main-color);
+}
+
+.second > div > button:hover {
+    cursor: pointer;
+}
