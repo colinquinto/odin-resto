@@ -1,1 +1,249 @@
-(()=>{"use strict";var n={208:(n,e,t)=>{t.d(e,{A:()=>p});var r=t(601),o=t.n(r),a=t(314),c=t.n(a),i=t(417),s=t.n(i),l=new URL(t(136),t.b),u=c()(o()),d=s()(l);u.push([n.id,`* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}\n\n:root {\n    --main-color: #78716c;\n    --second-color: #e5e5e5;\n    font-family: 'main-font';\n}\n\n@font-face {\n    font-family: 'main-font';\n    src: url(${d}) format('truetype');\n    font-style: normal;\n  }\n\nhtml, body {\n    height: 100vh;\n}\n\nbody {\n    background-color: var(--main-color);\n    overflow: auto;\n}\n\nheader {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    flex-wrap: wrap;\n    align-content: center;\n    justify-content: center;\n    color: #fff;\n}\n\nheader > h1 {\n    text-align: center;\n    font-size: clamp(1.5rem, 5vw, 2.5rem);\n    margin-top: 10px;\n    padding: 10px;\n}\n\nnav {\n    display: grid;\n    grid-template: 1fr / 1fr 1fr 1fr;\n    text-align: center;\n}\n\nnav > button {\n    width: 100px;\n    border: none;\n    height: 35px;\n    background: none;\n    color: #fff;\n    font-size: clamp(0.7rem, 2vw, 1rem);\n    font-family: 'main-font';\n    margin: 0 10px 20px 10px;\n    justify-self: center;\n}\n\nnav > button:hover {\n    cursor: pointer;\n    background-color: var(--second-color);\n    color: var(--main-color);\n    text-decoration: underline;\n}\n\n.active {\n    text-decoration: underline;\n    border: 3px solid;\n}\n\n#content {\n    min-height: 100%;\n    width: 80%;\n    margin: auto;\n    background-color: #fff;\n    display: flex;\n    flex-wrap: wrap;\n}\n\n.first {\n    height: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    margin: 10px 30px;\n}\n\n.first > h1 {\n    text-align: center;\n    color: var(--main-color);\n    align-self: center;\n    font-size: clamp(1.5rem, 3vw, 3rem);\n}\n\n.first > h1 > p {\n    font-size:  clamp(1rem, 2vw, 1.5rem);\n    text-align: justify;\n    font-weight: lighter;\n}\n\n.logo {\n    max-width: 100%;\n    height: auto;\n    align-self: center;\n}\n\n.second {\n    height: 100%;\n    display: flex;\n    flex-wrap: wrap;\n    margin: 10px 20px;\n    width: 100%;\n    color: var(--main-color);\n    justify-content: space-evenly;\n}\n\n.second-p1, .second-p2 {\n    display: flex;\n    flex-direction: column;\n    flex-wrap: wrap;\n    text-align: center;\n    margin: 10px;\n    font-size: clamp(0.7rem, 1vw, 3rem);\n    border: 5px solid;\n}\n\n.food, .contact-img {\n    max-width: 100%;\n    height: auto;\n    padding: 20px;\n    background-color: var(--main-color);\n    margin-bottom: 10px;\n}\n\n.second > div > button {\n    font-family: 'main-font';\n    background: none;\n    border: none;\n    text-decoration: underline;\n    margin: 10px 0;\n    font-size: clamp(0.9rem, 1vw, 1.5rem);\n    color: var(--main-color);\n}\n\n.second > div > button:hover {\n    cursor: pointer;\n}`,""]);const p=u},314:n=>{n.exports=function(n){var e=[];return e.toString=function(){return this.map((function(e){var t="",r=void 0!==e[5];return e[4]&&(t+="@supports (".concat(e[4],") {")),e[2]&&(t+="@media ".concat(e[2]," {")),r&&(t+="@layer".concat(e[5].length>0?" ".concat(e[5]):""," {")),t+=n(e),r&&(t+="}"),e[2]&&(t+="}"),e[4]&&(t+="}"),t})).join("")},e.i=function(n,t,r,o,a){"string"==typeof n&&(n=[[null,n,void 0]]);var c={};if(r)for(var i=0;i<this.length;i++){var s=this[i][0];null!=s&&(c[s]=!0)}for(var l=0;l<n.length;l++){var u=[].concat(n[l]);r&&c[u[0]]||(void 0!==a&&(void 0===u[5]||(u[1]="@layer".concat(u[5].length>0?" ".concat(u[5]):""," {").concat(u[1],"}")),u[5]=a),t&&(u[2]?(u[1]="@media ".concat(u[2]," {").concat(u[1],"}"),u[2]=t):u[2]=t),o&&(u[4]?(u[1]="@supports (".concat(u[4],") {").concat(u[1],"}"),u[4]=o):u[4]="".concat(o)),e.push(u))}},e}},417:n=>{n.exports=function(n,e){return e||(e={}),n?(n=String(n.__esModule?n.default:n),/^['"].*['"]$/.test(n)&&(n=n.slice(1,-1)),e.hash&&(n+=e.hash),/["'() \t\n]|(%20)/.test(n)||e.needQuotes?'"'.concat(n.replace(/"/g,'\\"').replace(/\n/g,"\\n"),'"'):n):n}},601:n=>{n.exports=function(n){return n[1]}},72:n=>{var e=[];function t(n){for(var t=-1,r=0;r<e.length;r++)if(e[r].identifier===n){t=r;break}return t}function r(n,r){for(var a={},c=[],i=0;i<n.length;i++){var s=n[i],l=r.base?s[0]+r.base:s[0],u=a[l]||0,d="".concat(l," ").concat(u);a[l]=u+1;var p=t(d),f={css:s[1],media:s[2],sourceMap:s[3],supports:s[4],layer:s[5]};if(-1!==p)e[p].references++,e[p].updater(f);else{var m=o(f,r);r.byIndex=i,e.splice(i,0,{identifier:d,updater:m,references:1})}c.push(d)}return c}function o(n,e){var t=e.domAPI(e);return t.update(n),function(e){if(e){if(e.css===n.css&&e.media===n.media&&e.sourceMap===n.sourceMap&&e.supports===n.supports&&e.layer===n.layer)return;t.update(n=e)}else t.remove()}}n.exports=function(n,o){var a=r(n=n||[],o=o||{});return function(n){n=n||[];for(var c=0;c<a.length;c++){var i=t(a[c]);e[i].references--}for(var s=r(n,o),l=0;l<a.length;l++){var u=t(a[l]);0===e[u].references&&(e[u].updater(),e.splice(u,1))}a=s}}},659:n=>{var e={};n.exports=function(n,t){var r=function(n){if(void 0===e[n]){var t=document.querySelector(n);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(n){t=null}e[n]=t}return e[n]}(n);if(!r)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");r.appendChild(t)}},540:n=>{n.exports=function(n){var e=document.createElement("style");return n.setAttributes(e,n.attributes),n.insert(e,n.options),e}},56:(n,e,t)=>{n.exports=function(n){var e=t.nc;e&&n.setAttribute("nonce",e)}},825:n=>{n.exports=function(n){if("undefined"==typeof document)return{update:function(){},remove:function(){}};var e=n.insertStyleElement(n);return{update:function(t){!function(n,e,t){var r="";t.supports&&(r+="@supports (".concat(t.supports,") {")),t.media&&(r+="@media ".concat(t.media," {"));var o=void 0!==t.layer;o&&(r+="@layer".concat(t.layer.length>0?" ".concat(t.layer):""," {")),r+=t.css,o&&(r+="}"),t.media&&(r+="}"),t.supports&&(r+="}");var a=t.sourceMap;a&&"undefined"!=typeof btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(a))))," */")),e.styleTagTransform(r,n,e.options)}(e,n,t)},remove:function(){!function(n){if(null===n.parentNode)return!1;n.parentNode.removeChild(n)}(e)}}}},113:n=>{n.exports=function(n,e){if(e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}},136:(n,e,t)=>{n.exports=t.p+"613585db06f849ca7717.ttf"}},e={};function t(r){var o=e[r];if(void 0!==o)return o.exports;var a=e[r]={id:r,exports:{}};return n[r](a,a.exports,t),a.exports}t.m=n,t.n=n=>{var e=n&&n.__esModule?()=>n.default:()=>n;return t.d(e,{a:e}),e},t.d=(n,e)=>{for(var r in e)t.o(e,r)&&!t.o(n,r)&&Object.defineProperty(n,r,{enumerable:!0,get:e[r]})},t.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(n){if("object"==typeof window)return window}}(),t.o=(n,e)=>Object.prototype.hasOwnProperty.call(n,e),(()=>{var n;t.g.importScripts&&(n=t.g.location+"");var e=t.g.document;if(!n&&e&&(e.currentScript&&(n=e.currentScript.src),!n)){var r=e.getElementsByTagName("script");if(r.length)for(var o=r.length-1;o>-1&&(!n||!/^http(s?):/.test(n));)n=r[o--].src}if(!n)throw new Error("Automatic publicPath is not supported in this browser");n=n.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),t.p=n})(),t.b=document.baseURI||self.location.href,t.nc=void 0,(()=>{var n=t(72),e=t.n(n),r=t(825),o=t.n(r),a=t(659),c=t.n(a),i=t(56),s=t.n(i),l=t(540),u=t.n(l),d=t(113),p=t.n(d),f=t(208),m={};m.styleTagTransform=p(),m.setAttributes=s(),m.insert=c().bind(null,"head"),m.domAPI=o(),m.insertStyleElement=u(),e()(f.A,m),f.A&&f.A.locals&&f.A.locals;const v=t.p+"b2bb8f690d3696108781.png",h=t.p+"668e2d0adecfbdcd0fce.svg",g=t.p+"f4d588eb143ef8cb22d5.svg";(()=>{const n=document.querySelector("#content");document.querySelector(".about").classList.add("active");const e=document.createElement("div");e.setAttribute("class","first");const t=new Image;t.src=v,t.setAttribute("class","logo"),t.setAttribute("alt","Logo image");const r=document.createElement("h1");r.textContent="PINARES, PINIPAW, INOVERLOAD";const o=document.createElement("p");o.textContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",r.append(o),e.append(t,r);const a=document.createElement("div");a.setAttribute("class","second");const c=document.createElement("div");c.setAttribute("class","second-p1");const i=new Image;i.src=h,i.setAttribute("class","food"),i.setAttribute("alt","Food image");const s=document.createElement("h1");s.textContent="Hungry?";const l=document.createElement("h2");l.textContent="Check out our menu!";const u=document.createElement("button");u.textContent="Click here",c.append(i,s,l,u);const d=document.createElement("div");d.setAttribute("class","second-p2");const p=new Image;p.src=g,p.setAttribute("class","contact-img"),p.setAttribute("alt","Contact us image");const f=document.createElement("h1");f.textContent="Have concerns?";const m=document.createElement("h2");m.textContent="Contact Us!";const b=document.createElement("button");b.textContent="Click here",d.append(p,f,m,b),a.append(c,d),n.append(e,a)})()})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+
+;// CONCATENATED MODULE: ./src/logo.png
+const logo_namespaceObject = __webpack_require__.p + "b2bb8f690d3696108781.png";
+;// CONCATENATED MODULE: ./src/food-icon.svg
+const food_icon_namespaceObject = __webpack_require__.p + "668e2d0adecfbdcd0fce.svg";
+;// CONCATENATED MODULE: ./src/call-icon.svg
+const call_icon_namespaceObject = __webpack_require__.p + "f4d588eb143ef8cb22d5.svg";
+;// CONCATENATED MODULE: ./src/landing-page.js
+
+
+
+
+
+const renderLanding = () => {
+    const landingContent = document.querySelector("#content"),
+          btn = document.querySelector(".about");
+            btn.classList.add("active");
+
+    // Create first section
+    const firstDiv = document.createElement("div"),
+          myLogo = new Image(),
+          bigText = document.createElement("h1"),
+          smallText = document.createElement("p");
+          
+            firstDiv.setAttribute("class", "first");
+            myLogo.src = logo_namespaceObject;
+            myLogo.setAttribute("class", "logo");
+            myLogo.setAttribute("alt", "Logo image");
+            bigText.textContent = "PINARES, PINIPAW, INOVERLOAD";
+            smallText.textContent = 
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+            bigText.append(smallText);
+
+    firstDiv.append(
+        myLogo,
+        bigText,
+    );
+
+    // Create second section
+    const secondDiv = document.createElement("div");
+            secondDiv.setAttribute("class", "second");
+
+    // second section part 1
+    const secondDivP1 = document.createElement("div"),
+          foodImg = new Image(),
+          p1h1 = document.createElement("h1"),
+          p1h2 = document.createElement("h2"),
+          p1btn = document.createElement("button");
+
+            secondDivP1.setAttribute("class", "second-p1");
+            foodImg.src = food_icon_namespaceObject;
+            foodImg.setAttribute("class", "food");
+            foodImg.setAttribute("alt", "Food image");
+            p1h1.textContent = "Hungry?";
+            p1h2.textContent = "Check out our menu!";
+            p1btn.textContent = "Click here";
+
+
+    secondDivP1.append(
+        foodImg,
+        p1h1,
+        p1h2,
+        p1btn
+    );
+
+    // second section part 2
+    const secondDivP2 = document.createElement("div"),
+          contactImg = new Image(),
+          p2h1 = document.createElement("h1"),
+          p2h2 = document.createElement("h2"),
+          p2btn = document.createElement("button");
+
+            secondDivP2.setAttribute("class", "second-p2");
+            contactImg.src = call_icon_namespaceObject;
+            contactImg.setAttribute("class", "contact-img");
+            contactImg.setAttribute("alt", "Contact us image");
+            p2h1.textContent = "Have concerns?";
+            p2h2.textContent = "Contact Us!";
+            p2btn.textContent = "Click here";
+
+
+    secondDivP2.append(
+        contactImg,
+        p2h1,
+        p2h2,
+        p2btn,
+    );
+
+    secondDiv.append(
+        secondDivP1,
+        secondDivP2,
+    )
+
+    landingContent.append(
+        firstDiv,
+        secondDiv,
+    );
+
+    return landingContent;
+};
+
+
+
+
+;// CONCATENATED MODULE: ./src/menu.js
+
+
+const renderMenu = () => {
+    const menuContent = document.querySelector("#content"),
+          menuDiv = document.createElement("div");
+            menuDiv.classList.add("menu-items");
+
+          for (let i = 1; i < 4; i++) { 
+            const menuItems = document.createElement("div");
+            menuItems.classList.add("item-" + i);
+            menuDiv.append(menuItems);
+          }
+          menuContent.append(menuDiv)
+
+          const food = document.querySelector(".item-1"),
+                foodTitle = document.createElement("h1");
+
+                const dish = document.createElement("h2");
+                      
+                    food.append(
+                        foodTitle,
+                        dish
+                    )
+
+                    foodTitle.textContent = "FOOD";
+                    
+                   
+                    const price = document.createElement("h2");
+                    
+                    for (let i = 1; i < 11; i++) {
+                        const foodPara = document.createElement("p"),
+                              items = ["Pares", "Mami", "Pares Mami", "Pares Overload", "Pipaw Overload",
+                                       "100", "110", "120", "130", "140"];
+                       
+                        if (i < 6 ) {
+                            dish.textContent = "DISH";
+                            foodPara.textContent = items[i-1];
+                        }
+                        else if ( i === 6){
+                            food.append(price);
+                            price.textContent = "PRICE";
+                            foodPara.textContent = items[i-1];
+                        }
+                        else {
+                            foodPara.textContent = items[i-1];
+                            
+                        }
+                        food.append(foodPara);
+                    }
+
+
+                
+                
+
+
+    return menuContent;
+}
+
+
+;// CONCATENATED MODULE: ./src/index.js
+
+
+
+
+
+const render =(() => {
+    const getContainer = document.querySelector("#content");
+    const getBtn = document.querySelectorAll("button");
+    renderLanding();
+
+    const getAbout = document.querySelector(".about");
+    getAbout.addEventListener("click", () => {
+        getBtn.forEach((button) => button.classList.remove("active"));
+        getContainer.innerHTML = "";
+        renderLanding()
+    });
+
+    const getMenu = document.querySelector(".menu");
+    getMenu.addEventListener("click", (e) => {
+        getBtn.forEach((button) => button.classList.remove("active"));
+        getMenu.classList.add("active");
+        getContainer.innerHTML = "";
+        renderMenu();
+    })
+
+    const getContact = document.querySelector(".contact");
+    getContact.addEventListener("click", () => {
+        getBtn.forEach((button) => button.classList.remove("active"));
+        getContact.classList.add("active");
+        getContainer.innerHTML = "";
+    })
+})();
+
+
+/******/ })()
+;
