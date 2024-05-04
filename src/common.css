@@ -1,0 +1,77 @@
+:root {
+    --main-color: #78716c;
+    --second-color: #e5e5e5;
+    font-family: 'main-font';
+}
+
+@font-face {
+    font-family: 'main-font';
+    src: url('./font-one.ttf') format('truetype');
+    font-style: normal;
+  }
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--main-color);
+    overflow: auto;
+}
+
+#content {
+    min-height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    text-align: center;
+}
+
+nav > button {
+    width: 100px;
+    border: none;
+    height: 35px;
+    background: none;
+    color: #fff;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    margin: 0 10px 20px 10px;
+    justify-self: center;
+}
+
+nav > button:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    text-decoration: underline;
+    border: 3px solid #fff;
+}
+
+.active {
+    text-decoration: underline;
+    border: 3px solid;
+}
+
