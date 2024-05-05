@@ -7,32 +7,39 @@
     color: var(--main-color);
 }
 
-.menu-items > * {
+.menu-items > div {
     display: grid;
     grid-auto-flow: column;
-    grid-template: repeat(7, 1fr) / 1fr 1fr;
-    align-items: center;
-}
-
-.item-1 {
+    grid-template: repeat(8, 1fr) / 1fr 1fr;
     border: 2px solid;
-    padding: 10px;
+    margin: 10px;
+    padding: 20px;
 }
 
-.item-1 > h1 {
+.menu-items > div > img {
     grid-column: span 2;
 }
 
-.item-1 > *{
+.menu-items > div > h1 {
+    grid-column: span 2;
+}
+
+.menu-items > div > *{
     justify-self: center;
+    align-content: center;
+    height: 100%;
 }
 
-.item-1 > h2 {
+.menu-items > div > h2 {
     width: 60%;
-    border-bottom: 2px solid;
+    font-size: clamp(0.6rem, 2vw, 1.5rem);
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
 }
 
-.item-1 > p {
+.menu-items > div > p {
     font-size: clamp(0.8rem, 3vw, 1.5rem);
+    border-bottom: 2px solid var(--main-color);
     width: 60%;
 }
