@@ -2,6 +2,7 @@ import './reset.css';
 import './common.css';
 import { renderLanding } from './landing-page.js';
 import { renderMenu } from './menu.js';
+import { renderContact } from './contact.js';
 
 const render =(() => {
     const getContainer = document.querySelector("#content");
@@ -28,6 +29,7 @@ const render =(() => {
         getBtn.forEach((button) => button.classList.remove("active"));
         getContact.classList.add("active");
         getContainer.innerHTML = "";
+        renderContact();
     })
 })();
 
